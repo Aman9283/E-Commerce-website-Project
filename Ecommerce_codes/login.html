@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("bg1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .head{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="head w-50 d-flex text-white flex-column justify-content-center align-items-center">
+            <h1>E-commerce Project</h1>
+            <h2>(Web Development)..</h2>
+        </div>
+        
+        <div class="w-50 d-flex justify-content-left align-items-center vh-100 ">
+            <form class="w-50 p-2 bg-light border rounded" action="login.php" method="post">
+                    <h2 class="text-center text-danger ">User login</h2>
+
+                    <input class="form-control mt-4 pl-2" type="text" name="telphn" placeholder="Enter mobile number">
+                    <br>
+                    <input class="form-control  pl-2" type="password" name="upwd" placeholder="Enter user password">
+                    
+                    <a class="text-decoration-none text-muted m-2 " href="registration.html">Sign Up </a><br>
+                    
+                    <input class="btn btn-primary text-center form-control mt-2" type="submit" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

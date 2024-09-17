@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("bg3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu{
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .li{
+            margin-left: 1.5rem;
+            padding: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu d-flex bg-primary m-2 ">
+        <div class="li "><a href="upload.html">UPLOAD PRODUCTS</a></div>
+        <div class="li "><a href="view_product.php">VIEW PRODUCTS</a></div>
+        <div class="li"><a href="#">ORDER LIST</a></div>
+    </div>
+    <div class='d-flex justify-content-center align-items-center vh-100 w-100'>
+    <form class="bg-info p-3" action="upload.php" method="post" enctype="multipart/form-data">
+        <h1 class="text-center text-secondary"> Upload Products </h1>
+        <input type="text " class="form-control  mt-3" name="pname" placeholder="product name">
+        
+        <input type="text" class="form-control mt-2 " name="price" placeholder="price">
+        
+        <textarea class="form-control mt-2" name="details" placeholder="product discription" rows="5"></textarea>
+        
+        <input class="form-control mt-2" type="file" accept="image/" name="img" >
+        
+        <input class="btn btn-success text-center form-control mt-3" type="submit" value="upload">
+    </form>
+    </div>
+</body>
+</html>
